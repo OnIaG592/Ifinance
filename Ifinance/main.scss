@@ -1,0 +1,293 @@
+$margin:50px;
+$padding:50px;
+%padding {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+%titleText {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+%columnflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+%flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+%tetxdecoration {
+    text-decoration: none;
+}
+
+.first_div {
+    @extend %flex;
+    @extend %padding;
+    margin: $margin;
+    text-align: center;
+}
+
+.title_choice {
+    margin-top: 18px;
+}
+
+a {
+    @extend %tetxdecoration;
+    color: black;
+}
+
+.registration_button {
+    margin-left: $margin;
+    background-color: #23A6F0;
+    font-size: 18px;
+    color: white;
+    border-radius: 5%;
+}
+
+.second_div_button {
+    border: 1px solid #23A6F0;
+    box-sizing: border-box;
+    border-radius: 37px;
+}
+
+.second_div_button:hover {
+    background-color: #23A6F0;
+}
+
+.third_div a:hover {
+    background-color: #23A6F0;
+    color: #ffffff;
+    img {
+        display: block;
+    }
+}
+
+.second_div {
+    @extend %flex;
+    margin: $margin;
+}
+
+.big_title {
+    font-size: 80px
+}
+
+.flex_column {
+    @extend %columnflex;
+    margin: $margin;
+}
+
+.buttons {
+    margin-right: $margin;
+}
+
+.choices {
+    @extend %flex;
+    margin: $margin;
+}
+
+.third_div {
+    text-align: center;
+    margin: $margin;
+}
+
+.revies {
+    @extend %flex;
+    @extend %padding;
+}
+
+.fourth_div {
+    margin: $margin;
+}
+
+.choices1 {
+    @extend %columnflex;
+    text-align: start;
+    max-width: 20%;
+}
+
+.div_text {
+    text-align: center;
+    margin: $margin;
+    color: #ffffff;
+}
+
+.fifth_div {
+    img {
+        width: 270px;
+        height: 400px;
+    }
+    margin: $margin;
+}
+
+.six_div {
+    margin: $margin;
+    position: relative;
+    .new_circle {
+        position: absolute;
+        top: 80px;
+        right: 450px;
+    }
+    .choices {
+        margin: 80px;
+    }
+}
+
+.choice_title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.price_color {
+    color: #23A6F0;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+.choice_text {
+    color: #737373;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.per_month {
+    color: #23A6F0;
+    text-align: center;
+}
+
+.seven_div {
+    @extend %flex;
+    align-items: center;
+    margin: $margin;
+    background-color: #252B42;
+}
+
+.first_footer {
+    @extend %flex;
+    margin: $margin;
+}
+
+.second_footer {
+    text-align: center;
+}
+
+.title_text {
+    @extend %titleText;
+}
+
+.header_title {
+    color: #252B42;
+    font-size: 35px;
+}
+
+.choices_title {
+    color: #737373;
+    font-size: 14px;
+}
+
+.seven_div_title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 40%;
+}
+
+.enter_email_div {
+    margin-right: 40px;
+}
+
+@media (max-width: 600px) {
+    .first_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    .title_choice {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .title_choice a {
+        padding: 15px;
+    }
+    .login_button {
+        display: none;
+    }
+    .second_div {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 20px;
+        margin-top: 100px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        img {
+            width: 370px;
+            height: 457.98px;
+            left: 11.25px;
+            top: -1px;
+        }
+        .big_title {
+            font-size: 50px;
+        }
+        .flex_column {
+            display: flex;
+            flex: 60%;
+        }
+    }
+    .div_text {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 57px;
+        text-align: center;
+        letter-spacing: 0.2px;
+    }
+    .choices {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .revies {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .choices1 {
+        font-size: 20px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .new_circle {
+        display: none;
+    }
+    .seven_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        .enter_email_div {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            margin-bottom: 50px;
+        }
+    }
+    .first_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
